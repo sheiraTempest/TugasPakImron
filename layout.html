@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>WELCOME</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #7f96db;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: rgb(0, 0, 0);
+  background-image: url('sky.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 20%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 80%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+p {
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #7f96db;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  background-image:url(kimi.jpg);
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+<header>
+  <h2>WELCOME</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><img src="pp.png" width="105" height="127" style="border-radius: 50;"/></li>
+      <li><a href="Home.html">
+        <img src="home.png" width="50" height="50"> <a href="profil.html">
+        <img src="profil.png" width="50" height="50">
+          </a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Siti Shela Nuraziza</h1>
+    <img src="my.jpg" width="153" height="204" align="left" margin-right:"20px">
+    <p>Perkanalkan saya seorang mashasiswa Teknik Informatika dari Universitas Yudharta Pasuruan.<br>Alasan saya masuk Teknik Informatika karena prospek kerja yang luas<br>saya tertarik dibidang IT karena ingin mengetahui lebih luas bidang IT</p>
+  </article>
+</section>
+
+<footer>
+  <div class="container">
+    <small>copyright &copy; 2023 - Library.</small>
+  </div>
+</footer>
+
+</body>
+</html>
+
